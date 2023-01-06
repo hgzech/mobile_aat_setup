@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "mobile_aat_setup"
+  site-url: "https://hgzech.github.io/mobile_aat_setup"
+  description: "A project that helps setting up the mobile AAT"
+  repo-branch: main
+  repo-url: "https://github.com/hgzech/mobile_aat_setup"
