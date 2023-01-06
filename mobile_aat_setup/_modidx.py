@@ -5,4 +5,7 @@ d = { 'settings': { 'branch': 'main',
                 'doc_host': 'https://hgzech.github.io',
                 'git_url': 'https://github.com/hgzech/mobile_aat_setup',
                 'lib_path': 'mobile_aat_setup'},
-  'syms': {'mobile_aat_setup.core': {'mobile_aat_setup.core.foo': ('core.html#foo', 'mobile_aat_setup/core.py')}}}
+  'syms': { 'mobile_aat_setup.change_id': { 'mobile_aat_setup.change_id.change_package_name': ( 'change_id.html#change_package_name',
+                                                                                                'mobile_aat_setup/change_id.py'),
+                                            'mobile_aat_setup.change_id.foo': ('change_id.html#foo', 'mobile_aat_setup/change_id.py')},
+            'mobile_aat_setup.core': {'mobile_aat_setup.core.foo': ('core.html#foo', 'mobile_aat_setup/core.py')}}}
