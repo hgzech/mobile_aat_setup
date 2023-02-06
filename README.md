@@ -8,7 +8,7 @@ mobile AAT setup
 ### Setup Firebase
 
 Before using this package, you need to setup a firebase project. If you
-already have Firebase set up, skip to step 5.
+already have Firebase set up, skip to step 4.
 
 1)  Open http://firebase.google.com, log in with your google account and
     create a new project.
@@ -40,17 +40,22 @@ already have Firebase set up, skip to step 5.
 
 `pip install mobile_aat_setup`
 
-### Download mobile AAT package and prepare
+### Setup the app
 
-The following downloads the newest version of the mobile AAT app,
-changes the app’s package ID (so you can upload your own version of the
-app to the Playstore) and links the app to your google Firebase account.
+[`setup_aat`](https://hgzech.github.io/mobile_aat_setup/setup.html#setup_aat)
+downloads the newest version of the mobile AAT app, changes the app’s
+package ID (so you can upload your own version of the app to the
+Playstore) and links the app to your google Firebase account.
 
 ``` python
+from mobile_aat_setup.setup import setup_aat
+
 PATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP = '/Users/hilmarzech/Desktop/mobileaat'
 PATH_TO_GOOGLE_SERVICES_JSON = '/Users/hilmarzech/Desktop/google-services.json'
 
 setup_aat(PATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP, PATH_TO_GOOGLE_SERVICES_JSON)
 ```
 
-### Download Android Studio and open the created folder
+### Download Android Studio and open the created app folder
+
+You should now be able to run the app on your device.
