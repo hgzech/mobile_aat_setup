@@ -18,6 +18,19 @@ playstore.
 ```
 
 ``` python
+from mobile_aat_setup import change_id
+```
+
+``` python
+help(change_id.change_package_name)
+```
+
+    Help on function change_package_name in module mobile_aat_setup.change_id:
+
+    change_package_name(path, newname, oldname='hilmarzech')
+        # %% ../nbs/01_change_id.ipynb 6
+
+``` python
 PATH_TO_THE_ANDROID_STUDIO_PROJECT = "example/path"
 NEWNAME = "examplename"
 change_package_name(PATH_TO_THE_ANDROID_STUDIO_PROJECT, NEWNAME)
