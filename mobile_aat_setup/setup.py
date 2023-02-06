@@ -17,7 +17,7 @@ MOBILE_AAT_URL = "https://github.com/hgzech/mobile_aat"
 def download_aat_package(path_to_save):
     Repo.clone_from(MOBILE_AAT_URL, path_to_save)
 
-# %% ../nbs/02_setup.ipynb 9
+# %% ../nbs/02_setup.ipynb 10
 def get_middle_of_package_name(path_to_google_services):
     with open(path_to_google_services, 'r') as f:
         app_info = json.load(f)
@@ -26,13 +26,13 @@ def get_middle_of_package_name(path_to_google_services):
     middle_of_package_name = package_name.split('.')[1]
     return middle_of_package_name
 
-# %% ../nbs/02_setup.ipynb 12
+# %% ../nbs/02_setup.ipynb 13
 def swap_google_services(path_to_mobile_aat, path_to_google_services):
     path_to_old_google_services = os.path.join(path_to_mobile_aat, 'app', 'google-services.json')
     shutil.move(path_to_google_services, path_to_old_google_services)
     
 
-# %% ../nbs/02_setup.ipynb 14
+# %% ../nbs/02_setup.ipynb 15
 def setup_aat(path_to_save_to,path_to_google_services):
     download_aat_package(path_to_save_to)
     middle_of_package_name = get_middle_of_package_name(path_to_google_services)
