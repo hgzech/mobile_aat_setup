@@ -24,5 +24,5 @@ def change_package_name(path, newname, oldname = "hilmarzech"):
                 text = file.read()
             if (oldname in text) and (file_name!="local.properties"):
                 text = text.replace(oldname, newname)
-                with open(file_name,"w") as file:
+                with open(file_name,"w",encoding='utf-8',errors='ignore') as file:
                     file.write(text)
