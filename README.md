@@ -46,10 +46,11 @@ Once Python is installed, run this from your Terminal App on a Mac or from Comma
 
 ### Setup the app
 
-[`setup_aat`](https://hgzech.github.io/mobile_aat_setup/setup.html#setup_aat)
-downloads the newest version of the mobile AAT app, changes the app’s
+Next you run the four lines below to download the newest version of the mobile AAT app. The code also changes the app’s
 package ID (so you can upload your own version of the app to the
 Playstore) and links the app to your google Firebase account.
+
+Adjust the paths in the following lines so they point to the path where you want to store the mobile AAT app and to the path of the google-services.json that you downloaded from firebase. Next run those four lines with python:
 
 ``` python
 from mobile_aat_setup.setup import setup_aat
