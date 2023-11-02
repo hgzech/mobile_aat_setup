@@ -38,6 +38,10 @@ already have Firebase set up, skip to step 4.
 
 ### Install the mobile aat setup package
 
+If you haven't installedPpython yet. First, install [Python 3](https://www.python.org/downloads/)
+
+Once Python is installed, run this from your Terminal App on a Mac or from Command Prompt on Windows:
+
 `pip install mobile_aat_setup`
 
 ### Setup the app
