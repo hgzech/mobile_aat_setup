@@ -7,7 +7,7 @@ mobile AAT setup
 
 ### Setup Firebase
 
-Before using this package, you need to setup a firebase project. If you
+Before using this package, you need to setup a firebase project. Firebase will be used to store your experiments and study data online. If you
 already have Firebase set up, skip to step 4.
 
 1)  Open http://firebase.google.com, log in with your google account and
@@ -38,7 +38,7 @@ already have Firebase set up, skip to step 4.
 
 ### Install the mobile aat setup package
 
-If you haven't installedPpython yet. First, install [Python 3](https://www.python.org/downloads/)
+This package will help you make the mobile AAT app. If you haven't installed Python yet. First, install [Python 3](https://www.python.org/downloads/)
 
 Once Python is installed, run this from your Terminal App on a Mac or from Command Prompt on Windows:
 
