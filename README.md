@@ -42,7 +42,7 @@ This package will help you make the mobile AAT app. If you haven't installed Pyt
 
 Once Python is installed, run this from your Terminal App on a Mac or from Command Prompt on Windows:
 
-`pip install mobile_aat_setup`
+`pip install mobile_aat_setup` (if pip does not work, try pip3)
 
 ### Setup the app
 
@@ -50,7 +50,7 @@ Next you run the four lines below to download the newest version of the mobile A
 package ID (so you can upload your own version of the app to the
 Playstore) and links the app to your google Firebase account.
 
-Adjust the paths in the following lines so they point to the path where you want to store the mobile AAT app and to the path of the google-services.json that you downloaded from firebase. Next run those four lines with python:
+Adjust the paths in the following lines so they point to the path where you want to store the mobile AAT app and to the path of the google-services.json that you downloaded from firebase. Next run those four lines with python. To open python, go into your Terminal and type python or python3:
 
 ``` python
 from mobile_aat_setup.setup import setup_aat
