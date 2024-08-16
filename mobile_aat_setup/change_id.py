@@ -10,7 +10,7 @@ def foo(): pass
 import os
 
 # %% ../nbs/01_change_id.ipynb 6
-def change_package_name(path, newname, oldname = "hilmarzech"):
+def change_package_name(path, newname, oldname = "hgzech"):
     
     for path, dirs, files in os.walk(path,topdown=False):
         if oldname in dirs:
