@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "change_id.html",
+    "href": "change_id.html",
+    "title": "change id",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()\n\n\nsource\n\n\nchange_package_name\n\n change_package_name (path, newname, oldname='hgzech')\n\n\nchange_package_name(\"/Users/hilmarzech/AndroidStudioProjects/mobile_aat\",\"hilmarzech\",oldname = \"ramlihhcez\")",
+    "crumbs": [
+      "change id"
+    ]
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "change id",
+    "section": "",
+    "text": "#!pip install gitpython\n\nCollecting gitpython\n  Downloading GitPython-3.1.30-py3-none-any.whl (184 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.0/184.0 kB 1.4 MB/s eta 0:00:00a 0:00:01\nCollecting gitdb&lt;5,&gt;=4.0.1\n  Downloading gitdb-4.0.10-py3-none-any.whl (62 kB)\n     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 62.7/62.7 kB 2.1 MB/s eta 0:00:00\nCollecting smmap&lt;6,&gt;=3.0.1\n  Using cached smmap-5.0.0-py3-none-any.whl (24 kB)\nInstalling collected packages: smmap, gitdb, gitpython\nSuccessfully installed gitdb-4.0.10 gitpython-3.1.30 smmap-5.0.0\n\n\n\nsource\n\ndownload_aat_package\n\n download_aat_package (path_to_save)\n\n\ndownload_aat_package('/Users/hilmarzech/Desktop/mobileaat2')\n\n\nsource\n\n\nget_middle_of_package_name\n\n get_middle_of_package_name (path_to_google_services)\n\n\nget_middle_of_package_name('/Users/hilmarzech/Desktop/google-services.json')\n\n'yourname'\n\n\n\nhelp(os.path.join)\n\nHelp on function join in module posixpath:\n\njoin(a, *p)\n    Join two or more pathname components, inserting '/' as needed.\n    If any component is an absolute path, all previous path components\n    will be discarded.  An empty last part will result in a path that\n    ends with a separator.\n\n\n\n\nsource\n\n\nswap_google_services\n\n swap_google_services (path_to_mobile_aat, path_to_google_services)\n\n\nswap_google_services('/Users/hilmarzech/Desktop/mobile_aat','/Users/hilmarzech/Desktop/google-services.json')\n\n\nsource\n\n\nsetup_aat\n\n setup_aat (path_to_save_to, path_to_google_services)\n\n\nsetup_aat('/Users/hilmarzech/Desktop/mobileaat','/Users/hilmarzech/Desktop/google-services.json')",
+    "crumbs": [
+      "change id"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "mobile AAT setup",
+    "section": "",
+    "text": "Before using this package, you need to setup a firebase project. If you already have Firebase set up, skip to step 4.\n\nOpen http://firebase.google.com, log in with your google account and create a new project.\n\nThe name here does not matter, you don’t need google analytics\n\nIn your project create a database (this is where the data AATs be stored)\n\nclick on Realtime Database (on the left)\nclick Create Database\nchoose Belgium for Database location\nchoose start in locked mode\nones the database is created click on Rules (on the top) and change the two “false” to “true”\nPublish\n\nCreate Firebase storage (this is where you can upload experiments)\n\nclick on Storage (on the left)\nclick on Get started\nStart in production mode\nSet location to Europe west\nclick on Rules and change the “false” to “true”\n\nAdd the app\n\nClick on the cog, next to Project Overview (upper left)\nClick on Project settings\nClick on the Android logo (bottom)\nUnder Android package name, fill in com.yourname.picturegame, where you replace yourname with your name or your lab’s name.\n\nDownload google-services.json\n\n\n\n\npip install mobile_aat_setup\n\n\n\nsetup_aat downloads the newest version of the mobile AAT app, changes the app’s package ID (so you can upload your own version of the app to the Playstore) and links the app to your google Firebase account.\n\nfrom mobile_aat_setup.setup import setup_aat\n\nPATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP = '/Users/hilmarzech/Desktop/mobileaat'\nPATH_TO_GOOGLE_SERVICES_JSON = '/Users/hilmarzech/Desktop/google-services.json'\n\nsetup_aat(PATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP, PATH_TO_GOOGLE_SERVICES_JSON)\n\n\n\n\nYou should now be able to run the app on your device.",
+    "crumbs": [
+      "mobile AAT setup"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "mobile AAT setup",
+    "section": "",
+    "text": "Before using this package, you need to setup a firebase project. If you already have Firebase set up, skip to step 4.\n\nOpen http://firebase.google.com, log in with your google account and create a new project.\n\nThe name here does not matter, you don’t need google analytics\n\nIn your project create a database (this is where the data AATs be stored)\n\nclick on Realtime Database (on the left)\nclick Create Database\nchoose Belgium for Database location\nchoose start in locked mode\nones the database is created click on Rules (on the top) and change the two “false” to “true”\nPublish\n\nCreate Firebase storage (this is where you can upload experiments)\n\nclick on Storage (on the left)\nclick on Get started\nStart in production mode\nSet location to Europe west\nclick on Rules and change the “false” to “true”\n\nAdd the app\n\nClick on the cog, next to Project Overview (upper left)\nClick on Project settings\nClick on the Android logo (bottom)\nUnder Android package name, fill in com.yourname.picturegame, where you replace yourname with your name or your lab’s name.\n\nDownload google-services.json\n\n\n\n\npip install mobile_aat_setup\n\n\n\nsetup_aat downloads the newest version of the mobile AAT app, changes the app’s package ID (so you can upload your own version of the app to the Playstore) and links the app to your google Firebase account.\n\nfrom mobile_aat_setup.setup import setup_aat\n\nPATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP = '/Users/hilmarzech/Desktop/mobileaat'\nPATH_TO_GOOGLE_SERVICES_JSON = '/Users/hilmarzech/Desktop/google-services.json'\n\nsetup_aat(PATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP, PATH_TO_GOOGLE_SERVICES_JSON)\n\n\n\n\nYou should now be able to run the app on your device.",
+    "crumbs": [
+      "mobile AAT setup"
+    ]
+  }
+]
