@@ -62,5 +62,7 @@ setup_aat(PATH_TO_WHERE_YOU_WANT_TO_STORE_THE_APP, PATH_TO_GOOGLE_SERVICES_JSON)
 ```
 
 ### Download Android Studio and open the created app folder
-
-You should now be able to run the app on your device.
+1) Download Android Studio Iguana from here: https://developer.android.com/studio/archive
+2) Activate developer options on your Android device, switch on USB debugging, and plug it into your computer.
+3) Open the mobileaat folder that the mobile_aat_setup script created in Android studio
+4) Hit the play button in Android studio to run the app on your device.
